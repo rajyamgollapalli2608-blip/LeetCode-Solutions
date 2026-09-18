@@ -1,5 +1,5 @@
 class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
+    def searchInsert(self, nums: list[int], target: int) -> int:
         l=0
         h=len(nums)
         while l<h:
@@ -9,5 +9,7 @@ class Solution:
             elif nums[mid]<target:
                 l=mid+1
             else:
-                h=mid        
-        return l
+                h=mid
+        return l        
+
+        
